@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Lexend+Deca">
+    <link rel="stylesheet" href="desk.css ">
+    <title>Document</title>
+    <script>
+    function myFunction(ids) {
+        if(ids === 'demo1'){
+        document.getElementById(ids).innerHTML = "Sedans is a best choice of car among all.";
+        }
+        else if(ids === 'demo2'){
+            document.getElementById(ids).innerHTML = "Luxury is a best choice of car among all.";
+        }
+        else{
+            document.getElementById(ids).innerHTML = "Suvs is a best choice of car among all.";
+        }
+      }
+      </script>
+    
+</head>
+
+<body>
+    <div>
+    <div class="flex-container">
+    <div class = "grid-elements">
+        <div class = "grid-item-1">
+        <div><img class= "img-properties" src ="icon-sedans.svg"></div>
+        <h1 class="heading">SEDANS</h1>
+        <p id="demo1" class="paragraph">Choose a Sedan for its affortabilityand excellent fuel economy 
+            Ideal for crushing in the city or on your next Road trip.</p>
+            <button class = "btn-property-1" onclick="myFunction('demo1')" type="button">Learn More</button>
+          
+        </div>
+
+        <div class = "grid-item-2">
+        <div><img  class= "img-properties" src = "icon-luxury.svg"> </div>
+        <h1 class="heading">LUXURY</h1>
+        <p id="demo2" class="paragraph">Choose a Luxury for its affortabilityand excellent fuel economy 
+            Ideal for crushing in the city or on your next Road trip.</p>
+            <button class = "btn-property-2" onclick="myFunction('demo2')" type="button">Learn More</button>
+        </div>
+
+        <div class = "grid-item-3">
+         <div><img  class= "img-properties" src = "icon-suvs.svg"> </div>
+         <h1 class="heading">SUVS</h1>
+         <p id="demo3" class="paragraph">Choose a Suvs for its affortabilityand excellent fuel economy 
+            Ideal for crushing in the city or on your next Road trip.</p>
+            <button class = "btn-property-3" type="button" onclick="myFunction('demo3')">Learn More</button>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>
